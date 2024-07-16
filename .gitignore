@@ -1,0 +1,5 @@
+# Ignore virtual environment
+backend/venv/
+
+# Ignore Node.js modules
+frontend/node_modules/
