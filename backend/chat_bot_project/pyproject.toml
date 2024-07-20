@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "chat_bot_project"
+version = "0.1.0"
+description = "chat_bot_project using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.41.0" }
+
+[tool.poetry.scripts]
+chat_bot_project = "chat_bot_project.main:run"
+train = "chat_bot_project.main:train"
+replay = "chat_bot_project.main:replay"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
